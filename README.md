@@ -1,4 +1,4 @@
-Test de déploiement : https://github.com/Donawakens/TP3/blob/main/tp-3/V1/index.html
+Test de déploiement : https://donawakens.github.io/V1/
 
 Bonjour Monsieur, Je vous propose 2 versions de mon site responsive.
 
