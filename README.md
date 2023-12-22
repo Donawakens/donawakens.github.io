@@ -1,5 +1,3 @@
-Test de déploiement : https://donawakens.github.io/V1/
-
 Bonjour Monsieur, Je vous propose 2 versions de mon site responsive.
 
   V1
@@ -13,3 +11,7 @@ PS: J'ai fais de mon mieux en ce qui concerne le CSS de base :)
 Bonne continuation
 
 Donat RAVA
+
+TEST DE DÉPLOIEMENT:
+V1 https://donawakens.github.io/V1/
+V2 https://donawakens.github.io/V2/
