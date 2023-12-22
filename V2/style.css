@@ -1,0 +1,167 @@
+/* Couleurs */
+.gris {
+    background-color: #C0C0C0;
+}
+
+.rouge {
+    background-color: #c73030;
+}
+
+.vert {
+    background-color: #30c747;
+}
+
+/* Mise en page globale */
+body {
+    display: flex;
+    flex-direction: column;
+    /* Affichage en colonne par défaut */
+}
+
+header {
+    background-color: #333;
+    /* Couleur de fond de la barre de navigation */
+    color: white;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-container img {
+    width: 50px;
+    /* Ajustez la largeur du logo selon vos besoins */
+    height: auto;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+
+
+
+/* Conteneurs */
+.container-left,
+.container-right {
+    width: 100%;
+    /* Les deux conteneurs occupent toute la largeur par défaut */
+    margin: 20px;
+    /* Marge autour des deux conteneurs */
+}
+
+/* Titre */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 41px;
+    width: 100%;
+}
+
+/* Texte par défaut */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Police et taille spécifiques */
+.apartir {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+/* Carrés communs */
+.square {
+    background-color: #fff;
+    border-radius: 10%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.squarepop {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image dans les carrés */
+.square img {
+    width: 100%;
+    height: auto;
+    margin-top: 5px;
+}
+
+.squarepop .image-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Texte dans les carrés */
+.squarepop .text-container {
+    text-align: center;
+}
+
+.squarepop .apartir {
+    margin: 0;
+}
+
+.squarepop .apartir+.apartir {
+    margin-top: 10px;
+}
+
+/* Dernier élément sans marge en bas */
+.square:last-child,
+.rectangle:last-child {
+    margin-bottom: 0;
+}
+
+/* Media query pour ajuster la disposition sur les écrans plus larges */
+@media only screen and (min-width: 768px) {
+    body {
+        flex-direction: row;
+        /* Affichage en ligne pour les écrans plus larges */
+    }
+
+    .container-left,
+    .container-right {
+        width: 48%;
+        /* Utiliser 48% de l'espace sur les écrans plus larges */
+    }
+
+    .container-left {
+        margin-right: 2%;
+        /* Marge de 2% entre les deux conteneurs sur les écrans plus larges */
+    }
+
+    /* Ajustements spécifiques à container-right */
+    .container-right .squarepop .image-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        margin-right: 20px;
+        /* Rétablir la marge à droite */
+    }
+}

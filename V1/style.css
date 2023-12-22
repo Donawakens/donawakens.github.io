@@ -1,0 +1,115 @@
+/* Couleurs */
+.gris {
+    background-color: #C0C0C0;
+}
+
+.rouge {
+    background-color: #c73030;
+}
+
+.vert {
+    background-color: #30c747;
+}
+
+/* Mise en page globale */
+body {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* Conteneurs */
+.container-left {
+    border-radius: 2%;
+    margin: 20px 20px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.container-right {
+    border-radius: 5%;
+    min-width: 30%;
+    margin: 20px 20px 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/* Titre */
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 41px;
+    width: 100%;
+}
+
+/* Texte par défaut */
+p {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Police et taille spécifiques */
+.apartir {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 15px;
+}
+
+/* Carrés communs */
+.square{
+    background-color: #fff;
+    border-radius: 10%;
+    text-align: center;
+    margin-top: 41px;
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 20px;
+}
+
+
+.squarepop {
+    width: 300px;
+    height: auto;
+    background-color: #fff;
+    margin-top: 41px;
+    margin-left: 41px;
+    margin-right: 41px;
+    margin-bottom: 20px;
+    border-radius: 10%;
+    display: flex;
+    align-items: center;
+}
+
+/* Image dans les carrés */
+.square img {
+    width: 130px;
+    height: auto;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.squarepop .image-container img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+/* Texte dans les carrés */
+.squarepop .text-container {
+    text-align: left;
+}
+
+.squarepop .apartir {
+    margin: 0;
+    /* Supprimer la marge par défaut du paragraphe */
+}
+
+.squarepop .apartir+.apartir {
+    margin-top: 10px;
+}
+
+/* Dernier élément sans marge à droite */
+.square:last-child,
+.rectangle:last-child {
+    margin-right: 0;
+}
